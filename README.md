@@ -239,16 +239,8 @@ python extract_coefficients.py
 
 ## 🚀 Deployment
 
-### Frontend Deployment (GitHub Pages)
-**Note**: GitHub Pages requires a public repository for free accounts.
-
-To enable GitHub Pages:
-1. Make repository public in Settings > Danger Zone
-2. Enable Pages in Settings > Pages > Source: GitHub Actions
-3. Push changes to trigger deployment
-
-### Backend Deployment (Render)
-The FastAPI backend is deployed on Render:
+### Full-Stack Deployment (Render)
+The complete application (frontend + backend + ML model) is deployed on Render:
 
 1. **Connect Repository**: Link your GitHub repo to Render
 2. **Build Command**: `pip install -r requirements.txt`
