@@ -13,7 +13,8 @@ A machine learning web application that predicts yearly medical insurance charge
 
 ## 🚀 Live Demo
 
-[View Live Application](https://rohangowda2926.github.io/Insurance-Prediction-/)
+- **Frontend**: [View Live Application](https://rohangowda2926.github.io/Insurance-Prediction-/)
+- **Backend API**: Hosted on Render
 
 ## 📊 Model Performance
 
@@ -40,6 +41,7 @@ The model uses a **Gradient Boosting Regressor** with the following features:
 ### DevOps
 - **GitHub Actions** - CI/CD pipeline
 - **GitHub Pages** - Static site hosting
+- **Render** - Backend API hosting
 
 ## 📁 Project Structure
 
@@ -164,12 +166,28 @@ This script provides:
 
 ## 🚀 Deployment
 
-The application is automatically deployed to GitHub Pages using GitHub Actions:
+### Frontend Deployment (GitHub Pages)
+The frontend is automatically deployed using GitHub Actions:
 
 1. Push changes to `main` branch
 2. GitHub Actions workflow triggers
 3. Static files are deployed to GitHub Pages
 4. Live site updates automatically
+
+### Backend Deployment (Render)
+The FastAPI backend is deployed on Render:
+
+1. **Connect Repository**: Link your GitHub repo to Render
+2. **Build Command**: `pip install -r requirements.txt`
+3. **Start Command**: `uvicorn main:app --host 0.0.0.0 --port $PORT`
+4. **Environment**: Python 3.8+
+5. **Auto-Deploy**: Enabled for main branch
+
+#### Render Configuration
+- **Service Type**: Web Service
+- **Runtime**: Python 3
+- **Build Command**: `cd app/app && pip install -r requirements.txt`
+- **Start Command**: `cd app/app && uvicorn main:app --host 0.0.0.0 --port $PORT`
 
 ## 🤝 Contributing
 
