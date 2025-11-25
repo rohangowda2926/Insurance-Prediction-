@@ -13,8 +13,8 @@ A machine learning web application that predicts yearly medical insurance charge
 
 ## 🚀 Live Demo
 
-- **Frontend**: [View Live Application](https://rohangowda2926.github.io/Insurance-Prediction-/)
 - **Backend API**: Hosted on Render
+- **Frontend**: GitHub Pages (requires public repository)
 
 ## 📊 Model Performance
 
@@ -167,12 +167,12 @@ This script provides:
 ## 🚀 Deployment
 
 ### Frontend Deployment (GitHub Pages)
-The frontend is automatically deployed using GitHub Actions:
+**Note**: GitHub Pages requires a public repository for free accounts.
 
-1. Push changes to `main` branch
-2. GitHub Actions workflow triggers
-3. Static files are deployed to GitHub Pages
-4. Live site updates automatically
+To enable GitHub Pages:
+1. Make repository public in Settings > Danger Zone
+2. Enable Pages in Settings > Pages > Source: GitHub Actions
+3. Push changes to trigger deployment
 
 ### Backend Deployment (Render)
 The FastAPI backend is deployed on Render:
@@ -209,7 +209,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-**Rohan Gowda**
+**Rohan Dharmendra**
 - GitHub: [@rohangowda2926](https://github.com/rohangowda2926)
 - Project Link: [https://github.com/rohangowda2926/Insurance-Prediction-](https://github.com/rohangowda2926/Insurance-Prediction-)
 
