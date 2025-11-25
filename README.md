@@ -1,6 +1,14 @@
 # Insurance Charges Predictor 🏥💰
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Machine Learning](https://img.shields.io/badge/ML-GradientBoosting-orange)
+![Render](https://img.shields.io/badge/Deploy-Render-blue)
+![CI/CD](https://img.shields.io/badge/GitHub-Actions-purple)
+
 A machine learning web application that predicts yearly medical insurance charges based on personal and lifestyle factors. Built with FastAPI backend and modern vanilla JavaScript frontend.
+
+> 🌐 **[Live Demo](https://insurance-prediction-paiv.onrender.com/)** | 📊 **R² Score: 0.88** | 🚀 **Real-time Predictions**
 
 ## 🌟 Features
 
@@ -11,19 +19,31 @@ A machine learning web application that predicts yearly medical insurance charge
 - **Profile Insights**: Dynamic analysis of key risk factors
 - **GitHub Pages Deployment**: Automated deployment pipeline
 
+## 🖼️ Screenshots
+
+### Web Interface
+![Insurance Predictor Interface](docs/app-screenshot.png)
+*Clean, responsive UI with real-time predictions and risk assessment*
+
+### Model Performance
+![Model Evaluation](docs/model_evaluation.png)
+*Comprehensive model evaluation with R²=0.88 and feature importance analysis*
+
 ## 🚀 Live Demo
 
-- **Frontend**: [View Live Application](https://insurance-prediction-paiv.onrender.com/)
-- **Backend API**: Hosted on Render
+- **🌐 Web App**: [View Live Application](https://insurance-prediction-paiv.onrender.com/)
+- **📡 API**: Hosted on Render with automatic deployment
 
 ## 📊 Model Performance
 
-### Algorithm: Gradient Boosting Regressor
+### 🏆 Algorithm: Gradient Boosting Regressor
 
-**Key Metrics:**
+**🎯 Key Metrics:**
 - **R² Score**: 0.8795 (87.95% variance explained)
-- **RMSE**: $4,325.87 (Root Mean Square Error)
+- **RMSE**: $4,325.87 (Root Mean Square Error)  
 - **MAE**: $2,402.02 (Mean Absolute Error)
+
+![Model Performance](docs/model_evaluation.png)
 
 **Features Used:**
 - **Age** (18-64 years)
