@@ -80,7 +80,7 @@ A machine learning web application that predicts yearly medical insurance charge
 - **HTML5 & CSS3** - Modern responsive design
 - **Google Fonts** - Inter font family
 
-### DevOps
+### Deployment
 - **AWS EC2** - Primary backend hosting (Free Tier)
 - **GitHub Actions** - CI/CD pipeline
 - **GitHub Pages** - Static site hosting
