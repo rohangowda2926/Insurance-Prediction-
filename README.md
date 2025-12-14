@@ -3,12 +3,15 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![Machine Learning](https://img.shields.io/badge/ML-GradientBoosting-orange)
+![AWS EC2](https://img.shields.io/badge/Deploy-AWS%20EC2-orange)
 ![Render](https://img.shields.io/badge/Deploy-Render-blue)
-![CI/CD](https://img.shields.io/badge/GitHub-Actions-purple)
+![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen)
 
 A machine learning web application that predicts yearly medical insurance charges based on personal and lifestyle factors. Built with FastAPI backend and modern vanilla JavaScript frontend.
 
-> 🌐 **[Live Demo](https://insurance-prediction-paiv.onrender.com/)** | 📊 **R² Score: 0.88** | 🚀 **Real-time Predictions**
+> 🌐 **[Live Demo - AWS EC2](http://52.57.67.6/)** | 📊 **R² Score: 0.88** | 🚀 **Real-time Predictions**
+> 
+> 🔗 **Alternative**: [Render Deployment](https://insurance-prediction-paiv.onrender.com/)
 
 ## 🌟 Features
 
@@ -31,8 +34,9 @@ A machine learning web application that predicts yearly medical insurance charge
 
 ## 🚀 Live Demo
 
-- **🌐 Web App**: [View Live Application](https://insurance-prediction-paiv.onrender.com/)
-- **📡 API**: Hosted on Render with automatic deployment
+- **🌐 AWS EC2**: [http://52.57.67.6/](http://52.57.67.6/) (Primary deployment)
+- **🌐 Render**: [https://insurance-prediction-paiv.onrender.com/](https://insurance-prediction-paiv.onrender.com/) (Alternative)
+- **📡 API**: Multi-platform deployment with high availability
 
 ## 📊 Model Performance
 
@@ -77,9 +81,10 @@ A machine learning web application that predicts yearly medical insurance charge
 - **Google Fonts** - Inter font family
 
 ### DevOps
+- **AWS EC2** - Primary backend hosting (Free Tier)
 - **GitHub Actions** - CI/CD pipeline
 - **GitHub Pages** - Static site hosting
-- **Render** - Backend API hosting
+- **Render** - Alternative backend hosting
 
 ## 📁 Project Structure
 
@@ -259,18 +264,23 @@ python extract_coefficients.py
 
 ## 🚀 Deployment
 
-### Full-Stack Deployment (Render)
-The complete application (frontend + backend + ML model) is **deployed and live** on Render:
+### Multi-Platform Deployment
+
+#### AWS EC2 Deployment (Primary)
+The application is **deployed and live** on AWS EC2 Free Tier:
+
+- **🌐 Live URL**: http://52.57.67.6/
+- **💰 Cost**: 100% FREE for 12 months (AWS Free Tier)
+- **🔧 Platform**: Ubuntu 22.04 LTS on t2.micro instance
+- **🔄 Auto-Start**: Systemd service with auto-restart
+- **🌐 Web Server**: Nginx reverse proxy
+
+#### Render Deployment (Alternative)
+Backup deployment on Render:
 
 - **🌐 Live URL**: https://insurance-prediction-paiv.onrender.com/
 - **⚡ Auto-Deploy**: Enabled from GitHub main branch
 - **🔄 CI/CD**: Automatic builds on code changes
-
-#### Deployment Configuration
-- **Platform**: Render Web Service
-- **Runtime**: Python 3.11
-- **Build**: `cd app/app && pip install -r requirements.txt`
-- **Start**: `cd app/app && uvicorn main:app --host 0.0.0.0 --port $PORT`
 
 ## 🤝 Contributing
 

@@ -1,0 +1,17 @@
+# Create systemd service for auto-start
+# Save as: /etc/systemd/system/insurance-app.service
+
+[Unit]
+Description=Insurance Prediction FastAPI App
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/Insurance-Charges-Predictor/app/app
+Environment=PATH=/home/ubuntu/Insurance-Charges-Predictor/venv/bin
+ExecStart=/home/ubuntu/Insurance-Charges-Predictor/venv/bin/gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
