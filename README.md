@@ -314,7 +314,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Contact
 
 **Rohan Dharmendra**
-- GitHub: [@rohangowda2926](https://github.com/rohangowda2926)
+- GitHub: [@rohangowda2926](https://github.com/rohangowda2926),[@velurubhanuprasad144-boop](https://github.com/velurubhanuprasad144-boop)
 - Project Link: [https://github.com/rohangowda2926/Insurance-Prediction-](https://github.com/rohangowda2926/Insurance-Prediction-)
 
 ---
